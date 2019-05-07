@@ -1,5 +1,5 @@
 function addClick(){
-    window.location.href="index.html";
+    window.location.href="https://mastermac.github.io/w2/index.html";
 }
 
 $(function() {
