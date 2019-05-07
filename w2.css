@@ -1,0 +1,38 @@
+.config-card {
+    height: 100px;
+}
+.home-card{
+    height: 150px;
+    margin-bottom: 2.5rem;
+}
+
+.gblue {
+    background: linear-gradient(to right, #2980b9, #6dd5fa, #ffffff);
+}
+
+.gpink {
+    background: linear-gradient(to right, #ffdde1, #ee9ca7);
+}
+
+.gpurple {
+    background: linear-gradient(to right, #6A82FB, #FC5C7D);
+}
+
+.gred {
+    background: linear-gradient(to right, #b20a2c, #fffbd5);
+}
+
+.gyellow {
+    background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+}
+
+.gligh{
+    background: linear-gradient(to right, #f7971e, #ffd200);
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}

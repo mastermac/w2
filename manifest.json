@@ -1,0 +1,6 @@
+{
+    "name": "Widget 2",
+    "home": "w2.html",
+    "css": ["w2.css"],
+    "js": ["w2.js"]
+}

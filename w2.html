@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="w2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+    <div class="row" id="cardExp" style="padding: 1rem;">
+        <div class="card-panel home-card gpurple z-depth-3" id="cardPanel">
+            <div style="float: right; margin-top: -44px;">
+                <a class="btn-floating waves-effect waves-light yellow darken-1 z-depth-3 down-card"><i class="material-icons">arrow_downward</i></a>
+                <a class="btn-floating waves-effect waves-light green z-depth-3 up-card"><i class="material-icons">arrow_upward</i></a>
+                <a class="btn-floating waves-effect waves-light red z-depth-3 del-card"><i class="material-icons">clear</i></a>
+            </div>
+            <img id="loader" src="https://mastermac.github.io/w2/loader.gif" class="center" height="40px"/>
+            <div id="cardContent" style="display: none;">
+                <button class="btn waves-effect waves-light" onclick="addClick()">Actionable Item in Card</button>
+            </div>
+        </div>
+        <div class="fixed-action-btn">
+            <a id="menu" class="waves-effect waves-light btn btn-floating btn-large blue z-depth-5 modal-trigger" href="#modal1">
+                <i class="large material-icons">add</i>
+            </a>
+        </div>
+        <div id="modal1" class="modal bottom-sheet" style="height:100%; max-height:100%;">
+            <div class="modal-content">
+                <h4 style="font-size: 2rem;">Configure Dashboard...</h4>
+                <div class="row" id="cardExpConfig" >
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
+        </div>
+        <div class="tap-target blue" data-target="menu">
+            <div class="tap-target-content" style="color:white;">
+                <h5>Add More Widgets</h5>
+                <p>Tap on the + Icon to add more widgets to your dashboard!</p>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="w2.js"></script>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            M.AutoInit();
+            $('#modal1').modal({
+                inDuration: 800,
+                outDuration: 800,
+                opacity: 0.5,
+                startingTop: '0%',
+                endingTop: '0%',
+                preventScrolling: false,
+                dismissible: false
+            });
+            document.getElementById("modal1").style.maxHeight = "100%";
+            //document.getElementById("modal1").style.height = "100%";
+
+            // $('.tap-target').tapTarget('open');
+        });
+
+
+    </script>
+</body>
+</html>
